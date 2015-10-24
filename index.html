@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Redfur Connect</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+		<script type="text/javascript" src="_/jquery-1.11.3.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		<script src="_/modernizr-custom.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li>Home</li><!--
+				--><li>Forum</li><!--
+				--><li>Resources</li><!--
+				--><li>Members</li><!--
+				--><li>Gallery</li><!--
+				--><li>What's On</li><!--
+				--><li>Contact Us</li><!--
+				--><li>Shop</li><!--
+				--><li>Account</li>
+			</ul>
+		</nav>
+		<section id="slider">
+			<!-- gallery -->
+			<img src="img/aldmeri_banner.png" />
+		</section>
+		<section id="welcome">
+			<div class="container">
+				<h2>Welcome to Redfur Connect!</h2>
+				<p>Redfur is a community joined together for the common purpose of ingame trade in The Elder Scrolls. During our initial push to open Redfur Trading it began to become clear that we were going to be something more than a bustling trade hub. As time went by our guild grew tremendously and we opened a PvP/PvE guild called Redfur Army and yet another trade guild called Redfur Exchange.</p>
+				<p class="right">&#8212; Zlater</p>
+			</div>
+		</section>
+		<section id="menu">
+			<ul>
+				<li id="rtp"><canvas id="can_rep" width="200" height="218">Canvas is not supported</canvas><p>Redfur Trading Portal</p></li>
+				<li id="rep"><canvas id="can_rtp" width="200" height="218">Canvas is not supported</canvas><p>Redfur Exchange Portal</p></li>
+				<li id="nomar rap"><canvas id="can_rap" width="200" height="218">Canvas is not supported</canvas><p>Redfur Army Portal</p></li>
+				<li id="forum"><img src="img/forum.png" alt="Forum"/><p>Forum</p></li>
+				<li id="resources"><img src="img/resources.png" alt="Resources"/><p>Resources</p></li>
+				<li id="nomar events"><img src="img/events.png" alt="Events"/><p>Events</p></li>
+				<li id="trading"><img src="img/trading.png" alt="Trading"/><p>Trading</p></li>
+				<li id="gallery"><img src="img/gallery.png" alt="Gallery"/><p>Gallery</p></li>
+				<li id="nomar shop"><img src="img/shop.png" alt="Shop"/><p>Shop</p></li>
+			</ul>
+		</section>
+		<section id="news">
+			<h3>Orsinium DLC</h3>
+			<p>Orsinium, ESOTU's largest DLC game pack to date, features a colossal new zone with over 20 hours of story content, a new single-player monster arena, new public dungeons, and much more! The latest DLC game pack for the award-winning The Elder Scrolls Online: Tamriel Unlimited takes you to the mountains of Wrothgar, and to the Orc capital itself, to unravel plots and counter-plots, and clash with all-new enemies and allies.</p>
+			<video id="video" src="video/orsinium.mp4" onClick="pauseToggle()" width="700" controls poster="img/orsinium.jpg">
+				Video is not supported.
+			</video>
+		</section>
+		<section id="stats">
+			<h3>Statistics</h3>
+			<p>Figures are based on amount of members of the network.</p>
+		<div class="chart-container">
+			<div class="chart-content">
+				<div class="chart-y-axis">
+					<p style="top:0px;">1000</p>
+					<p style="bottom:0px;">0</p>
+				</div>
+				<div class="chart-area" bar-spacing="30">
+					<div bar-value="376" label="MAR" class="chart-bar"></div>
+                	<div bar-value="621" label="APR" class="chart-bar"></div>
+                	<div bar-value="782" label="MAY" class="chart-bar"></div>
+                	<div bar-value="953" label="JUN" class="chart-bar"></div>
+                	<div bar-value="989" label="JUL" class="chart-bar"></div>
+                	<div bar-value="997" label="AUG" class="chart-bar"></div>
+                	<div bar-value="760" label="SEP" class="chart-bar"></div>
+				</div>
+				<div class="chart-x-axis"></div>
+			</div>
+		</div>
+		</section>
+		<section id="map">
+			<h3>Redfur Members on the Map</h3>
+        	<div class="map_container">
+			<a class="dot" style="top:50px; left:90px;" continent="NA"></a>
+			<a class="dot" style="top:200px; left:150px;" continent="SA"></a>
+			<a class="dot" style="top:60px; left:300px;" continent="EU"></a>
+			<a class="dot" style="top:80px; left:420px;" continent="AS"></a>
+            <a class="dot" style="top:150px; left:310px;" continent="AF"></a>
+            <a class="dot" style="top:240px; left:550px;" continent="AU"></a>
+            <form id="mapForm" name="mapForm" class="form_continent" method="post" action="">
+				<select name="continent" id="continent">
+					<option value="NA">North America</option>
+					<option value="SA">South America</option>
+					<option value="EU">Europe</option>
+					<option value="AS">Asia</option>
+					<option value="AF">Africa</option>
+					<option value="AU">Australia</option>
+					<option value="ALL" selected="selected">Show all continents</option>
+				</select>
+			</form>
+			<!-- continent details -->
+			<div class="detail_container">
+				<!-- continent -->
+				<div class="continent_detail">
+					<h2>Choose a continent</h2>
+					<p>Click one of the buttons to the left.</p>
+				</div>
+			</div>
+			</div>
+			<div class="continent_detail_container">
+			<!-- continent -->
+				<div class="continent_detail" id="NA">
+					<div class="continent_info">
+						<h2>Members Total: 13</h2>
+						<h3>Top 3 countries:</h3>
+						<ul>
+							<li>8: USA</li>
+							<li>5: Canada</li>
+						</ul>
+					</div>
+				</div>
+				<div class="continent_detail" id="SA">
+					<div class="continent_info">
+						<h2>Members Total: 7</h2>
+						<h3>Top 3 countries:</h3>
+						<ul>
+							<li>5: Brazil</li>
+							<li>1: Venezuela</li>
+							<li>1: Mexico</li>
+						</ul>
+					</div>
+				</div>
+				<!-- continent -->
+				<div class="continent_detail" id="EU">
+					<div class="continent_info">
+						<h2>Members Total: 603</h2>
+						<h3>Top 3 countries:</h3>
+						<ul>
+							<li>74: Germany</li>
+							<li>73: UK</li>
+							<li>65: France</li>
+						</ul>
+					</div>
+				</div>
+				<div class="continent_detail" id="AS">
+					<div class="continent_info">
+						<h2>Members Total: 55</h2>
+						<h3>Top 3 countries:</h3>
+						<ul>
+							<li>24: Turkey</li>
+							<li>15: Israel</li>
+							<li>7: China</li>
+						</ul>
+					</div>
+				</div>
+				<div class="continent_detail" id="AF">
+					<div class="continent_info">
+						<h2>Members Total: 30</h2>
+						<h3>Top 3 countries:</h3>
+						<ul>
+							<li>14: South Africa</li>
+							<li>14: Egypt</li>
+							<li>1: Marocco</li>
+						</ul>
+					</div>
+				</div>
+				<div class="continent_detail" id="AU">
+					<div class="continent_info">
+						<h2>Members Total: 52</h2>
+						<h3>Top 3 countries:</h3>
+						<ul>
+							<li>41: Australia</li>
+							<li>11: New Zeland</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="clear"></div>
+		<section id="gallery">
+			<h3>Latest Screenshots</h3>
+				<div class="fotorama">
+					<img src="img/screenshot1.jpg">
+					<img src="img/screenshot2.jpg">
+					<img src="img/screenshot3.jpg">
+				</div>
+		</section>
+		<footer>
+			<p>Home | Forum | Resources | Members | Gallery | What's On | Contact Us | Shop | Account</p>
+		</footer>
+	</body>
+</html>
