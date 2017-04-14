@@ -135,5 +135,5 @@ window.onload = function() {
 			ctx.fillText(str_t, 32, 180);
 
 		}
-	}
+	} 
 }
