@@ -82,7 +82,7 @@ window.onload = function() {
 			ctx.strokeStyle = "#ffffcc";
 			ctx.fillStyle = "#222222";
 			ctx.lineWidth = 20;
-			
+
 			//draw a rectangle
 			ctx.fillRect(0,0,200,218);
 			ctx.strokeRect(0,0,200,218);
@@ -103,7 +103,7 @@ window.onload = function() {
 			ctx.strokeStyle = "#ffffcc";
 			ctx.fillStyle = "#222222";
 			ctx.lineWidth = 20;
-			
+
 			//draw a rectangle
 			ctx.fillRect(0,0,200,218);
 			ctx.strokeRect(0,0,200,218);
@@ -124,7 +124,7 @@ window.onload = function() {
 			ctx.strokeStyle = "#ffffcc";
 			ctx.fillStyle = "#222222";
 			ctx.lineWidth = 20;
-			
+
 			//draw a rectangle
 			ctx.fillRect(0,0,200,218);
 			ctx.strokeRect(0,0,200,218);
@@ -135,5 +135,5 @@ window.onload = function() {
 			ctx.fillText(str_t, 32, 180);
 
 		}
-	} 
+	}
 }

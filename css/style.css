@@ -5,12 +5,12 @@ body {
 	color: #333;
 }
 
-nav ul, 
+nav ul,
 #map h3,
-#news h3, 
-#stats h3, 
+#news h3,
+#stats h3,
 #gallery h3,
-.chart-x-axis p, 
+.chart-x-axis p,
 .chart-area .chart-bar p {
 	text-align: center;
 }
@@ -21,42 +21,42 @@ li {
 	text-transform: uppercase;
 }
 
-section, 
-#news p, 
+section,
+#news p,
 #stats p,
 section#menu,
 #welcome .container {
 	margin: 0 auto;
 }
 
-nav, 
-video, 
-section, 
-#slider img, 
-section#menu, 
+nav,
+video,
+section,
+#slider img,
+section#menu,
 #map h3:after,
 #map h3:before,
-#news h3:after, 
-#news h3:before, 
-#stats h3:after, 
+#news h3:after,
+#news h3:before,
+#stats h3:after,
 #stats h3:before,
 #gallery h3:after,
-#gallery h3:before, 
-.chart-y-axis p:first-of-type:before, 
+#gallery h3:before,
+.chart-y-axis p:first-of-type:before,
 .chart-y-axis p:nth-of-type(2):after {
 	display: block;
 }
 
 #map h3,
-#news h3, 
+#news h3,
 #stats h3,
 #gallery h3 {
 	text-transform: uppercase;
 }
 
-nav, 
+nav,
 .clear,
-#welcome, 
+#welcome,
 #slider img {
 	width: 100%;
 }
@@ -79,22 +79,22 @@ nav ul {
 
 #map h3:after,
 #map h3:before,
-#news h3:after, 
+#news h3:after,
 nav ul li:hover,
 #stats h3:after,
-#news h3:before, 
+#news h3:before,
 #stats h3:before,
 #gallery h3:after,
 #gallery h3:before {
 	background: #CC2900;
 }
 
-#slider, 
+#slider,
 #welcome .container {
 	width: 70%;
 }
 
-#slider, 
+#slider,
 .chart-content {
 	position: relative;
 }
@@ -118,10 +118,9 @@ nav ul li:hover,
 	margin: 5px 0px 0px 0px;
 }
 
-section#menu, 
+section#menu,
 .chart-content {
 	overflow: hidden;
-
 }
 
 nav {
@@ -140,10 +139,10 @@ nav ul li {
 	line-height: 50px;
 	width: 10%;
 	text-shadow: 2px 2px 3px #661400;
-	-moz-transition: all 0.5s ease 0s; 
-	-webkit-transition: all 0.5s ease 0s; 
-	-ms-transition: all 0.5s ease 0s; 
-	-o-transition: all 0.5s ease 0s; 
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 
@@ -183,16 +182,20 @@ section#menu {
 	text-align: center;
 }
 
+section#menu ul {
+	padding: 0;
+}
+
 section#menu ul li {
 	width: 33%;
 	margin-top: 30px;
 	padding-top: 30px;
 	font-size: 2em;
 	color: #ddd;
-	-moz-transition: all 0.5s ease 0s; 
-	-webkit-transition: all 0.5s ease 0s; 
-	-ms-transition: all 0.5s ease 0s; 
-	-o-transition: all 0.5s ease 0s; 
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 
@@ -243,28 +246,30 @@ section#menu ul li:hover {
 video {
 	margin: 50px auto;
 	box-shadow: 0px 0px 10px #000;
+	width: 90%;
+	max-width: 800px;
 }
 
-.chart-container { 
+.chart-container {
 	width: 650px;
 	margin: 50px auto;
 }
 
-.chart-content { 
-	height: 340px; 
+.chart-content {
+	height: 340px;
 }
 
-.chart-y-axis { 
-	width: 50px; 
-	height: 300px; 
-	top: 0px; 
-	left: 0px; 
+.chart-y-axis {
+	width: 50px;
+	height: 300px;
+	top: 0px;
+	left: 0px;
 	border-right: 1px solid #CC2900;
 }
 
-.chart-y-axis p { 
-	margin: 0px 0px 0px 10px; 
-	width: 35px;  
+.chart-y-axis p {
+	margin: 0px 0px 0px 10px;
+	width: 35px;
 	text-align: right;
 }
 
@@ -286,16 +291,16 @@ video {
 	margin-left: 40px !important;
 }
 
-.chart-x-axis { 
-	height: 50px; 
-	top: 300px; 
-	left: 80px; 
+.chart-x-axis {
+	height: 50px;
+	top: 300px;
+	left: 80px;
 }
 
-.chart-x-axis p { 
-	top: 0px; 
-	width: 100px; 
-	color: #ddd; 
+.chart-x-axis p {
+	top: 0px;
+	width: 100px;
+	color: #ddd;
 	border-top: 1px solid #CC2900;
 }
 
@@ -320,9 +325,9 @@ video {
 	background-position: 50% bottom;
 }
 
-.chart-area .chart-bar p { 
-	color: #333 !important; 
-	display: none; 
+.chart-area .chart-bar p {
+	color: #333 !important;
+	display: none;
 }
 
 /*  continent Info   */
@@ -366,11 +371,11 @@ video {
 }
 .map_container a.dot:hover {
 	background-image: url(../img/dot_yellow.png);
-	
+
 }
 .map_container a.dot.selected {
 	background-image: url(../img/dot_green.png);
-	
+
 }
 
 .map_container .form_continent {
@@ -454,6 +459,28 @@ footer p {
 }
 
 .fotorama {
-	margin: 50px 300px;
-	width: 800px;
+	margin: 50px auto;
+	width: 90%;
+	max-width: 800px;
+}
+
+@media only screen and (max-width: 1000px) {
+	section#menu {
+		width: 100%;
+	}
+
+	section#map {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 610px) {
+	section#menu ul li {
+		width: 100%;
+		display: block;
+	}
+
+	section#stats {
+		display: none;
+	}
 }
