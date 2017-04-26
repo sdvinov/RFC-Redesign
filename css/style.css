@@ -85,7 +85,8 @@ nav ul li:hover,
 #news h3:before,
 #stats h3:before,
 #gallery h3:after,
-#gallery h3:before {
+#gallery h3:before,
+#dropdown a:hover {
 	background: #CC2900;
 }
 
@@ -131,13 +132,12 @@ nav {
 	background: rgba(0, 0, 0, .6);
 	height: 50px;
 	font-size: 1.8em;
-	min-width: 1300px;
 }
 
 nav ul li {
 	color: #CC0;
 	line-height: 50px;
-	width: 10%;
+	padding: 0 20px;
 	text-shadow: 2px 2px 3px #661400;
 	-moz-transition: all 0.5s ease 0s;
 	-webkit-transition: all 0.5s ease 0s;
@@ -464,12 +464,63 @@ footer p {
 	max-width: 800px;
 }
 
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, .6);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	border-bottom: 3px solid #CC2900;
+	border-left: 3px solid #CC2900;
+	border-right: 3px solid #CC2900;
+}
+
+li#dropdown {
+  display: inline-block;
+}
+
+#dropdown a {
+	display: block;
+	color: #CC0;
+	text-decoration: none;
+}
+
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+
+#dropdown-content a {
+	padding:  0 20px;
+}
+
+#mobile-menu {
+	display: none;
+}
+
 @media only screen and (max-width: 1000px) {
 	section#menu {
 		width: 100%;
 	}
 
 	section#map {
+		display: none;
+	}
+
+	nav ul li {
+		font-size: .7em;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	nav {
+		display: none;
+	}
+
+	#mobile-menu {
+		display: block;
+	}
+
+	#mobile-menu-expanded {
 		display: none;
 	}
 }
